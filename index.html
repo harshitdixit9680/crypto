@@ -180,9 +180,9 @@
                                     </div>
                                   </div>
                                 <a class="prev__btn" onclick="prevForm();" >Back</a>
-                                <!-- <a  class="nxt__btn buts"  onclick="nextForm();">Submit</a> -->
-                                <a   id="submitBtn" onclick="nextForm();" ></a>    
-                                <button type="submit" id="khatam" class="btn1 btn-sm nxt__btn " >Submit</button> 
+                                <a  class="nxt__btn buts" id="khatam" type="submit"  onclick="nextForm();">Submit</a>
+                                <!-- <a   id="submitBtn" onclick="nextForm();" ></a>    
+                                <button type="submit" id="khatam" class="btn1 btn-sm nxt__btn " >Submit</button>  -->
                             </div>
                             
                         <div class="Portfolio-name-three"></div>
@@ -488,9 +488,9 @@ myDiv3.addEventListener('click',function(){
 
     let khatam = document.getElementById("khatam")
     khatam.addEventListener('click', function(){
-    //   event.preventDefault();
-    alert("Your Form Succesfully Submitted")
-    //   form.reset();
+      event.preventDefault();
+    // alert("Your Form Succesfully Submitted")
+      form.reset();
     });
     
       
